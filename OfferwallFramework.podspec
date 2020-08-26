@@ -6,5 +6,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Antonio Luna" => "antonio.luna@tagwizz.com.mx" }
   spec.source       = { :git => "https://github.com/AntonioLunaTagWizz/OfferwallFramework.git", :tag => "#{spec.version}" }
-  spec.source_files  = "OfferwallFrameWork.framework/Headers/*.h"
+  spec.platform     = :ios
+  spec.ios.deployment_target = "10.0"
+  spec.ios.vendored_frameworks = "OfferwallFramework.framework"
 end
