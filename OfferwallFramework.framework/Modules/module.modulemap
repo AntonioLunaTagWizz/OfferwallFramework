@@ -1,0 +1,6 @@
+framework module OfferwallFramework {
+  umbrella header "OfferwallFramework.h"
+
+  export *
+  module * { export * }
+}
